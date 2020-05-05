@@ -1,0 +1,8 @@
+{
+    "name": "node-ddbb-ejer1",
+    "version": "1.0.0",
+    "dependencies": {
+        "aws-sdk": "^2.669.0",
+        "uuid": "^8.0.0"
+    }
+}

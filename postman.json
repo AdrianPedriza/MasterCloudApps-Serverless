@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "286f2f8d-d335-4ee3-92f9-b96e35c9a5bf",
+		"name": "MasterCloudApps-Tema2-Practica-2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Jack Nicholson\",\n\t\"nickname\": \"Nicky\",\n\t\"title\": \"My Joker was good too\",\n\t\"content\": \"Respect for Heath Ledger and Joaquin Phoenix\",\n\t\"comments\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Jack Nicholson\",\n\t\"nickname\": \"Nicky\",\n\t\"title\": \"My Joker was good too\",\n\t\"content\": \"Respect for Heath Ledger and Joaquin Phoenix\",\n\t\"comments\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Jack Nicholson\",\n\t\"nickname\": \"Mr. John Joseph Nicholson\",\n\t\"title\": \"My Joker was good too\",\n\t\"content\": \"Respect for Heath Ledger and Joaquin Phoenix\",\n\t\"comments\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /ID/comments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nickname\": \"Random Internet Guy\",\n\t\"comment\": \"Here is Johnny!\",\n\t\"creationDate\": \"2019-11-26 10:15:55\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/5ddfa6ebd3e750386eb6e5f8/comments/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"5ddfa6ebd3e750386eb6e5f8",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /ID/comments/ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/5ddfa6ebd3e750386eb6e5f8/comments/5ddfa717d3e750386eb6e5fa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"5ddfa6ebd3e750386eb6e5f8",
+						"comments",
+						"5ddfa717d3e750386eb6e5fa"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
